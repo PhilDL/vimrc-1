@@ -251,6 +251,9 @@ let g:lasttab = 1
 nmap <Leader>tl :exe "tabn ".g:lasttab<CR>
 au TabLeave * let g:lasttab = tabpagenr()
 
+" Let 'jk' exit visual/edit mode
+:inoremap jk <esc>
+
 
 " Opens a new tab with the current buffer's path
 " Super useful when editing files in the same directory
